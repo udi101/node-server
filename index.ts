@@ -7,7 +7,7 @@ import { workersRouter } from './workers/workers.route';
 import { menuRouter } from './menu/menu.route';
 import cors from 'cors';
 
-const app = express();
+export const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(helmet());
